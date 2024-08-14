@@ -17,7 +17,7 @@ btn.addEventListener("click", () => {
     }
 
     if (actualValue == 0) {
-      text.innerText = "Fuck you Nocky 👋";
+      text.innerText = "Time up 👋";
       btn.disabled = false;
       clearInterval(test);
     }
