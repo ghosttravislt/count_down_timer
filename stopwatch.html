@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        /* color: blue; */
+      }
+
+      body {
+        background-color: #008148;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 89vh;
+      }
+
+      .displaytime {
+        font-size: 8rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+
+      label {
+        /* text-align: center;
+         */
+        margin-left: 70px;
+        font-size: 2rem;
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        padding-left: 30px;
+        font-size: 1rem;
+      }
+
+      .btn {
+        margin-left: 120px;
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: #110d0d;
+        color: #fff;
+      }
+    </style>
+
+    <section class="container">
+      <div class="stopwatch">
+        <div class="displaytime">0</div>
+        <label for="timer" id="text">Count down</label>
+        <div class="timer">
+          <input type="text" name="timer" id="time" placeholder="example 20" />
+        </div>
+        <button class="btn">set time</button>
+      </div>
+    </section>
+    <script src="timer.js"></script>
+  </body>
+</html>
